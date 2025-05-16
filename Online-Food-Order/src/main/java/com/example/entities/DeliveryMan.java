@@ -6,18 +6,17 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 @Entity
-@Table(name = "Restaurant")
+@Table(name = "DeliveryMan")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Restaurant {
+public class DeliveryMan {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int restaurantId;
+    private int deliveryManId;
 
-    private String name;
-    private String location;
-    private String cuisineType;
-    private double rating;
+    private String username;
+
+    private boolean isAvailable;
 }

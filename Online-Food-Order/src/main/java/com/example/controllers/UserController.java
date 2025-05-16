@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.payloads.UserPayload;
-import com.example.service.UserService;
+import com.example.service.DeliveryManService;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private UserService userService; // Injection du service qui contient la logique métier
+    private DeliveryManService userService; // Injection du service qui contient la logique métier
 
     // Endpoint pour récupérer tous les utilisateurs (GET /users)
     @GetMapping
